@@ -17,16 +17,16 @@ A clean and responsive currency conversion web application built with **React**,
 
 ## 🛠️ Tech Stack
 
-| Technology              | Purpose                                 |
-| ----------------------- | --------------------------------------- |
-| React 19                | Building the user interface             |
-| Vite                    | Development server and production build |
-| Tailwind CSS 4          | Styling and responsive UI               |
-| JavaScript (ES Modules) | Application logic                       |
-| ExchangeRate-API        | Exchange-rate data                      |
-| ESLint                  | Code quality and linting                |
+| Technology | Purpose |
+|---|---|
+| React 19 | Building the user interface |
+| Vite | Development server and production build |
+| Tailwind CSS 4 | Styling and responsive UI |
+| JavaScript (ES Modules) | Application logic |
+| ExchangeRate-API | Exchange-rate data |
+| ESLint | Code quality and linting |
 
-The project's `package.json` defines React, React DOM, Tailwind CSS, and the Tailwind Vite plugin as runtime dependencies, with Vite and ESLint tooling configured for development.
+The project's `package.json` defines React, React DOM, Tailwind CSS, and the Tailwind Vite plugin as runtime dependencies, with Vite and ESLint tooling configured for development. 
 
 ## 🧠 How It Works
 
@@ -137,13 +137,10 @@ This keeps the UI reusable while allowing the parent `App` component to control 
 
 ## 📸 Screenshots
 
-Add screenshots here after uploading them to the repository:
-
-## 📸 Screenshots
-
 <p align="center">
-  <img src="./Screenshot .png" alt="Currency Converter Screenshot" width="800"/>
+  <img src="S" alt="Currency Converter Screenshot" width="800"/>
 </p>
+
 
 ## 🌐 Live Demo
 
