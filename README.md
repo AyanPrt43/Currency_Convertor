@@ -140,9 +140,15 @@ This keeps the UI reusable while allowing the parent `App` component to control 
 <p align="center">
   <img src="./Screenshot .png" alt="Currency Converter Screenshot" width="800"/>
 </p>
+
+
 ## 🌐 Live Demo
 
-**Live Demo:** `Add your deployed application URL here`
+<p align="center">
+  <a href="https://currency-convertor-nu-ashen.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Website-blue?style=for-the-badge" alt="Live Demo"/>
+  </a>
+</p>
 
 ## 📌 What This Project Demonstrates
 
