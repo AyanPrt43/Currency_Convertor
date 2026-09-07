@@ -137,10 +137,8 @@ This keeps the UI reusable while allowing the parent `App` component to control 
 
 ## 📸 Screenshots
 
-Add screenshots here after uploading them to the repository:
-
 <p align="center">
-  <img src="./Screenshot.png" alt="Currency Converter Screenshot" width="800"/>
+  <img src="Screenshot.png" alt="Currency Converter Screenshot" width="800"/>
 </p>
 
 ## 🌐 Live Demo
