@@ -140,7 +140,7 @@ This keeps the UI reusable while allowing the parent `App` component to control 
 Add screenshots here after uploading them to the repository:
 
 ```md
-![Currency Converter Screenshot](./screenshots/currency-converter.png)
+![Currency Converter Screenshot](./Screenshot.png)
 ```
 
 ## 🌐 Live Demo
