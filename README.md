@@ -138,9 +138,8 @@ This keeps the UI reusable while allowing the parent `App` component to control 
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="Screenshot.png" alt="Currency Converter Screenshot" width="800"/>
+  <img src="./Screenshot .png" alt="Currency Converter Screenshot" width="800"/>
 </p>
-
 ## 🌐 Live Demo
 
 **Live Demo:** `Add your deployed application URL here`
