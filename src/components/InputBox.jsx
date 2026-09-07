@@ -7,21 +7,27 @@ function InputBox({
   selectCurrency = "usd",
 }) {
   return (
-    <div className="bg-white/30 flex w-full h-29 justify-between p-5 rounded-2xl">
-      <div className="flex flex-col">
+    <div className="flex w-full flex-col gap-4 rounded-2xl bg-white/30 p-4 sm:flex-row sm:items-end sm:justify-between sm:p-5">
+      {/* Amount Section */}
+      <div className="flex w-full flex-col sm:flex-1">
         <label className="mb-2">{label}</label>
+
         <input
           type="number"
           value={amount}
-          onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}
-          className="bg-black/40 rounded-2xl p-2 outline-none"
+          onChange={(e) =>
+            onAmountChange && onAmountChange(Number(e.target.value))
+          }
+          className="w-full rounded-2xl bg-black/40 p-2 outline-none"
         />
       </div>
 
-      <div className="flex flex-col">
+      {/* Currency Section */}
+      <div className="flex w-full flex-col sm:w-auto">
         <label className="mb-2">Currency Type</label>
+
         <select
-          className="bg-black/40 rounded-2xl h-10 outline-none"
+          className="h-10 w-full rounded-2xl bg-black/40 px-3 outline-none sm:w-32"
           value={selectCurrency}
           onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
         >

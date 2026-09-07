@@ -27,32 +27,49 @@ function App() {
 
   return (
     <>
-      <div className="Main flex items-center bg-white/25 h-1/3 w-1/3 rounded-2xl border border-white p-8 flex-col gap-4 relative">
-        <InputBox
-          label="From"
-          amount={amount}
-          currencyOptions={options}
-          onAmountChange={(amt) => setAmount(amt)}
-          onCurrencyChange={(currency) => setFrom(currency)}
-          selectCurrency={from}
-        />
+      {/* Main Screen */}
+      <div className="min-h-screen w-full flex items-center justify-center px-3 py-6 sm:px-6 sm:py-8">
+        {/* Main Converter Box */}
+        <div className="Main relative flex w-full max-w-2xl flex-col gap-4 rounded-2xl border border-white bg-white/25 p-4 sm:p-6 md:p-8">
+          {/* From + To Section */}
+          <div className="relative flex flex-col gap-4">
+            {/* From Currency */}
+            <InputBox
+              label="From"
+              amount={amount}
+              currencyOptions={options}
+              onAmountChange={(amt) => setAmount(amt)}
+              onCurrencyChange={(currency) => setFrom(currency)}
+              selectCurrency={from}
+            />
 
-        <button onClick={swap} className="absolute bg-blue-400 hover:bg-blue-300 rounded-2xl px-7 py-2 cursor-pointer top-[35.5%] border">
-          Swap
-        </button>
+            {/* To Currency */}
+            <InputBox
+              label="To"
+              amount={convertedAmount}
+              currencyOptions={options}
+              onCurrencyChange={(currency) => setTo(currency)}
+              selectCurrency={to}
+            />
 
-        <InputBox
-          label="To"
-          amount={convertedAmount}
-          currencyOptions={options}
-          onCurrencyChange={(currency) => setTo(currency)}
-          selectCurrency={to}
-        />
+            {/* Swap Button */}
+            <button
+              onClick={swap}
+              className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 rounded-2xl border bg-blue-400 px-6 py-2 cursor-pointer hover:bg-blue-300 sm:px-7"
+            >
+              Swap
+            </button>
+          </div>
 
-        <div className="w-full">
-          <button onClick={convert} className="bg-blue-400 rounded-2xl p-4 cursor-pointer w-full hover:bg-blue-300 border">
-            Convert {from.toUpperCase()} to {to.toUpperCase()}
-          </button>
+          {/* Convert Button */}
+          <div className="w-full">
+            <button
+              onClick={convert}
+              className="w-full rounded-2xl border bg-blue-400 p-4 cursor-pointer hover:bg-blue-300"
+            >
+              Convert {from.toUpperCase()} to {to.toUpperCase()}
+            </button>
+          </div>
         </div>
       </div>
     </>
